@@ -48,7 +48,7 @@ lib/
 ├── navigation/
 │   ├── app_router.dart
 ├── main.dart
-```plaintext
+```
 
 # Core
 config: Contains global configuration files for app themes, text styles, and colors.
