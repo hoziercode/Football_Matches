@@ -71,7 +71,7 @@ Core Layer: Shared components such as theme settings, utilities, and extensions.
 # Getting Started
 git clone https://github.com/hoziercode/Football_Matches.git
 
-Install Dependencies
+## Install Dependencies
 flutter pub get
 
 # Running the App
