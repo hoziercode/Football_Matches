@@ -20,6 +20,8 @@ Google Fonts: To enhance the typography with stylish font choices.
 Hydrated BLoC: For persisting BLoC states across app restarts.
 
 # Folder Structure
+
+```plaintext
 lib/
 ├── core/
 │   ├── config/
