@@ -51,12 +51,12 @@ lib/
 ```
 
 # Core
-config: Contains global configuration files for app themes, text styles, and colors.
-utils: Includes utility files such as screen utilities and context extensions.
-Features
-match: Contains the features related to football matches, including:
-data: Handles data fetching, models, and repositories.
-presentation: Includes BLoC, screens, and UI components.
+**config**: Contains global configuration files for app themes, text styles, and colors.
+**utils**: Includes utility files such as screen utilities and context extensions.
+## Features
+**match**: Contains the features related to football matches, including:
+**data**: Handles data fetching, models, and repositories.
+**presentation**: Includes BLoC, screens, and UI components.
 domain: Contains business logic, use cases, and entities.
 Navigation
 app_router.dart: Manages routing across the app, using the GoRouter package for declarative navigation.
