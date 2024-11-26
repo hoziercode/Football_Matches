@@ -51,11 +51,11 @@ lib/
 ```
 
 # Core
-**config**: Contains global configuration files for app themes, text styles, and colors.
-**utils**: Includes utility files such as screen utilities and context extensions.
+- **config**: Contains global configuration files for app themes, text styles, and colors.
+- **utils**: Includes utility files such as screen utilities and context extensions.
 ## Features
-**match**: Contains the features related to football matches, including:
-**data**: Handles data fetching, models, and repositories.
+- **match**: Contains the features related to football matches, including:
+- **data**: Handles data fetching, models, and repositories.
 **presentation**: Includes BLoC, screens, and UI components.
 domain: Contains business logic, use cases, and entities.
 Navigation
