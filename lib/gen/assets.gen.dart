@@ -25,45 +25,279 @@ class $AssetsAnimationsGen {
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/Alarm Bell.svg
+  SvgGenImage get alarmBell => const SvgGenImage('assets/icons/Alarm Bell.svg');
+
+  /// File path: assets/icons/Burger Icon.svg
+  SvgGenImage get burgerIcon =>
+      const SvgGenImage('assets/icons/Burger Icon.svg');
+
+  /// File path: assets/icons/Line 25.svg
+  SvgGenImage get line25 => const SvgGenImage('assets/icons/Line 25.svg');
+
+  /// File path: assets/icons/barca.svg
+  SvgGenImage get barca => const SvgGenImage('assets/icons/barca.svg');
+
+  /// File path: assets/icons/bundesliga.svg
+  SvgGenImage get bundesliga =>
+      const SvgGenImage('assets/icons/bundesliga.svg');
+
+  /// File path: assets/icons/epl.svg
+  SvgGenImage get epl => const SvgGenImage('assets/icons/epl.svg');
+
   /// File path: assets/icons/fantasy.svg
   SvgGenImage get fantasy => const SvgGenImage('assets/icons/fantasy.svg');
 
   /// File path: assets/icons/football.svg
   SvgGenImage get football => const SvgGenImage('assets/icons/football.svg');
 
+  /// File path: assets/icons/girona.svg
+  SvgGenImage get girona => const SvgGenImage('assets/icons/girona.svg');
+
   /// File path: assets/icons/home.svg
   SvgGenImage get home => const SvgGenImage('assets/icons/home.svg');
 
+  /// File path: assets/icons/laliga.svg
+  SvgGenImage get laliga => const SvgGenImage('assets/icons/laliga.svg');
+
   /// File path: assets/icons/logo.svg
   SvgGenImage get logo => const SvgGenImage('assets/icons/logo.svg');
+
+  /// File path: assets/icons/network.svg
+  SvgGenImage get network => const SvgGenImage('assets/icons/network.svg');
+
+  /// File path: assets/icons/play_svgrepo.com.svg
+  SvgGenImage get playSvgrepoCom =>
+      const SvgGenImage('assets/icons/play_svgrepo.com.svg');
+
+  /// File path: assets/icons/seriesa.svg
+  SvgGenImage get seriesa => const SvgGenImage('assets/icons/seriesa.svg');
 
   /// File path: assets/icons/shop.svg
   SvgGenImage get shop => const SvgGenImage('assets/icons/shop.svg');
 
   /// List of all assets
-  List<SvgGenImage> get values => [fantasy, football, home, logo, shop];
+  List<SvgGenImage> get values => [
+        alarmBell,
+        burgerIcon,
+        line25,
+        barca,
+        bundesliga,
+        epl,
+        fantasy,
+        football,
+        girona,
+        home,
+        laliga,
+        logo,
+        network,
+        playSvgrepoCom,
+        seriesa,
+        shop
+      ];
 }
 
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/0s6vq2b84g5epvo28evcqqg6co-7c632b414cd2d94e555d8a47e3bc7a27.png
+  AssetGenImage get a0s6vq2b84g5epvo28evcqqg6co7c632b414cd2d94e555d8a47e3bc7a27 =>
+      const AssetGenImage(
+          'assets/images/0s6vq2b84g5epvo28evcqqg6co-7c632b414cd2d94e555d8a47e3bc7a27.png');
+
   /// File path: assets/images/3Scorers R3-02 1.png
   AssetGenImage get a3ScorersR3021 =>
       const AssetGenImage('assets/images/3Scorers R3-02 1.png');
+
+  /// File path: assets/images/EPL.png
+  AssetGenImage get epl => const AssetGenImage('assets/images/EPL.png');
+
+  /// File path: assets/images/Karim-Benzema-from-Real-Madrid-transparent-PNG-image.png
+  AssetGenImage get karimBenzemaFromRealMadridTransparentPNGImage =>
+      const AssetGenImage(
+          'assets/images/Karim-Benzema-from-Real-Madrid-transparent-PNG-image.png');
+
+  /// File path: assets/images/LALIGA.png
+  AssetGenImage get laliga => const AssetGenImage('assets/images/LALIGA.png');
+
+  /// File path: assets/images/ansu-fati-fc-barcelona-la-liga-spain-spanish-footballers-uniqrenders.com.png
+  AssetGenImage
+      get ansuFatiFcBarcelonaLaLigaSpainSpanishFootballersUniqrendersCom =>
+          const AssetGenImage(
+              'assets/images/ansu-fati-fc-barcelona-la-liga-spain-spanish-footballers-uniqrenders.com.png');
+
+  /// File path: assets/images/background_2.png
+  AssetGenImage get background2 =>
+      const AssetGenImage('assets/images/background_2.png');
+
+  /// File path: assets/images/barca.png
+  AssetGenImage get barca => const AssetGenImage('assets/images/barca.png');
+
+  /// File path: assets/images/bruno-fernandes-manchester-united-premier-league-portugal-portuguese-footballers-uniqrenders.com.png
+  AssetGenImage
+      get brunoFernandesManchesterUnitedPremierLeaguePortugalPortugueseFootballersUniqrendersCom =>
+          const AssetGenImage(
+              'assets/images/bruno-fernandes-manchester-united-premier-league-portugal-portuguese-footballers-uniqrenders.com.png');
+
+  /// File path: assets/images/bun.png
+  AssetGenImage get bun => const AssetGenImage('assets/images/bun.png');
+
+  /// File path: assets/images/chelsea.png
+  AssetGenImage get chelsea => const AssetGenImage('assets/images/chelsea.png');
+
+  /// File path: assets/images/christian-pulisic-ac-milan-serie-a-usa-american-footballers-uniqrenders.com.png
+  AssetGenImage
+      get christianPulisicAcMilanSerieAUsaAmericanFootballersUniqrendersCom =>
+          const AssetGenImage(
+              'assets/images/christian-pulisic-ac-milan-serie-a-usa-american-footballers-uniqrenders.com.png');
+
+  /// File path: assets/images/fc-bayern-munich-f-c-bavaria-tultitlan-logo-football-emblem-football-d0997aaa531ae7bb04d3c117830af8fb.png
+  AssetGenImage
+      get fcBayernMunichFCBavariaTultitlanLogoFootballEmblemFootballD0997aaa531ae7bb04d3c117830af8fb =>
+          const AssetGenImage(
+              'assets/images/fc-bayern-munich-f-c-bavaria-tultitlan-logo-football-emblem-football-d0997aaa531ae7bb04d3c117830af8fb.png');
+
+  /// File path: assets/images/field1.jpeg
+  AssetGenImage get field1 => const AssetGenImage('assets/images/field1.jpeg');
+
+  /// File path: assets/images/field2.jpeg
+  AssetGenImage get field2 => const AssetGenImage('assets/images/field2.jpeg');
 
   /// File path: assets/images/first_background.png
   AssetGenImage get firstBackground =>
       const AssetGenImage('assets/images/first_background.png');
 
+  /// File path: assets/images/football_svgrepo.com.png
+  AssetGenImage get footballSvgrepoCom =>
+      const AssetGenImage('assets/images/football_svgrepo.com.png');
+
+  /// File path: assets/images/gavi-fc-barcelona-la-liga-spain-spanish-footballers-uniqrenders.com.png
+  AssetGenImage get gaviFcBarcelonaLaLigaSpainSpanishFootballersUniqrendersCom =>
+      const AssetGenImage(
+          'assets/images/gavi-fc-barcelona-la-liga-spain-spanish-footballers-uniqrenders.com.png');
+
+  /// File path: assets/images/goal.png
+  AssetGenImage get goal => const AssetGenImage('assets/images/goal.png');
+
+  /// File path: assets/images/joao-cancelo-manchester-city-premier-league-portugal-portuguese-footballers-uniqrenders.com.png
+  AssetGenImage
+      get joaoCanceloManchesterCityPremierLeaguePortugalPortugueseFootballersUniqrendersCom =>
+          const AssetGenImage(
+              'assets/images/joao-cancelo-manchester-city-premier-league-portugal-portuguese-footballers-uniqrenders.com.png');
+
   /// File path: assets/images/knight.jpeg
   AssetGenImage get knight => const AssetGenImage('assets/images/knight.jpeg');
+
+  /// File path: assets/images/kylian-mbappe-paris-saint-germain-ligue-1-france-french-footballers-uniqrenders.com.png
+  AssetGenImage
+      get kylianMbappeParisSaintGermainLigue1FranceFrenchFootballersUniqrendersCom =>
+          const AssetGenImage(
+              'assets/images/kylian-mbappe-paris-saint-germain-ligue-1-france-french-footballers-uniqrenders.com.png');
+
+  /// File path: assets/images/laligalogo.png
+  AssetGenImage get laligalogo =>
+      const AssetGenImage('assets/images/laligalogo.png');
+
+  /// File path: assets/images/league1.png
+  AssetGenImage get league1 => const AssetGenImage('assets/images/league1.png');
+
+  /// File path: assets/images/manU.png
+  AssetGenImage get manU => const AssetGenImage('assets/images/manU.png');
 
   /// File path: assets/images/nikola.jpeg
   AssetGenImage get nikola => const AssetGenImage('assets/images/nikola.jpeg');
 
+  /// File path: assets/images/notgoal.png
+  AssetGenImage get notgoal => const AssetGenImage('assets/images/notgoal.png');
+
+  /// File path: assets/images/psg.png
+  AssetGenImage get psg => const AssetGenImage('assets/images/psg.png');
+
+  /// File path: assets/images/real_madrid.png
+  AssetGenImage get realMadrid =>
+      const AssetGenImage('assets/images/real_madrid.png');
+
+  /// File path: assets/images/redcard.png
+  AssetGenImage get redcard => const AssetGenImage('assets/images/redcard.png');
+
+  /// File path: assets/images/robert-lewandowski-fc-barcelona-la-liga-poland-polish-footballers-uniqrenders.com.png
+  AssetGenImage
+      get robertLewandowskiFcBarcelonaLaLigaPolandPolishFootballersUniqrendersCom =>
+          const AssetGenImage(
+              'assets/images/robert-lewandowski-fc-barcelona-la-liga-poland-polish-footballers-uniqrenders.com.png');
+
+  /// File path: assets/images/rodrygo-real-madrid-la-liga-brazil-brazilian-footballers-uniqrenders.com.png
+  AssetGenImage
+      get rodrygoRealMadridLaLigaBrazilBrazilianFootballersUniqrendersCom =>
+          const AssetGenImage(
+              'assets/images/rodrygo-real-madrid-la-liga-brazil-brazilian-footballers-uniqrenders.com.png');
+
+  /// File path: assets/images/serieA.png
+  AssetGenImage get serieA => const AssetGenImage('assets/images/serieA.png');
+
+  /// File path: assets/images/stopwatch-time-timer_svgrepo.com.png
+  AssetGenImage get stopwatchTimeTimerSvgrepoCom =>
+      const AssetGenImage('assets/images/stopwatch-time-timer_svgrepo.com.png');
+
+  /// File path: assets/images/toppng.com-raheem-sterling-377x540.png
+  AssetGenImage get toppngComRaheemSterling377x540 => const AssetGenImage(
+      'assets/images/toppng.com-raheem-sterling-377x540.png');
+
+  /// File path: assets/images/vinicius-junior-real-madrid-la-liga-brazil-brazilian-footballers-uniqrenders.com.png
+  AssetGenImage
+      get viniciusJuniorRealMadridLaLigaBrazilBrazilianFootballersUniqrendersCom =>
+          const AssetGenImage(
+              'assets/images/vinicius-junior-real-madrid-la-liga-brazil-brazilian-footballers-uniqrenders.com.png');
+
   /// List of all assets
-  List<AssetGenImage> get values =>
-      [a3ScorersR3021, firstBackground, knight, nikola];
+  List<AssetGenImage> get values => [
+        a0s6vq2b84g5epvo28evcqqg6co7c632b414cd2d94e555d8a47e3bc7a27,
+        a3ScorersR3021,
+        epl,
+        karimBenzemaFromRealMadridTransparentPNGImage,
+        laliga,
+        ansuFatiFcBarcelonaLaLigaSpainSpanishFootballersUniqrendersCom,
+        background2,
+        barca,
+        brunoFernandesManchesterUnitedPremierLeaguePortugalPortugueseFootballersUniqrendersCom,
+        bun,
+        chelsea,
+        christianPulisicAcMilanSerieAUsaAmericanFootballersUniqrendersCom,
+        fcBayernMunichFCBavariaTultitlanLogoFootballEmblemFootballD0997aaa531ae7bb04d3c117830af8fb,
+        field1,
+        field2,
+        firstBackground,
+        footballSvgrepoCom,
+        gaviFcBarcelonaLaLigaSpainSpanishFootballersUniqrendersCom,
+        goal,
+        joaoCanceloManchesterCityPremierLeaguePortugalPortugueseFootballersUniqrendersCom,
+        knight,
+        kylianMbappeParisSaintGermainLigue1FranceFrenchFootballersUniqrendersCom,
+        laligalogo,
+        league1,
+        manU,
+        nikola,
+        notgoal,
+        psg,
+        realMadrid,
+        redcard,
+        robertLewandowskiFcBarcelonaLaLigaPolandPolishFootballersUniqrendersCom,
+        rodrygoRealMadridLaLigaBrazilBrazilianFootballersUniqrendersCom,
+        serieA,
+        stopwatchTimeTimerSvgrepoCom,
+        toppngComRaheemSterling377x540,
+        viniciusJuniorRealMadridLaLigaBrazilBrazilianFootballersUniqrendersCom
+      ];
+}
+
+class $AssetsJsonGen {
+  const $AssetsJsonGen();
+
+  /// File path: assets/json/matches.json
+  String get matches => 'assets/json/matches.json';
+
+  /// List of all assets
+  List<String> get values => [matches];
 }
 
 class Assets {
@@ -72,6 +306,7 @@ class Assets {
   static const $AssetsAnimationsGen animations = $AssetsAnimationsGen();
   static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
+  static const $AssetsJsonGen json = $AssetsJsonGen();
 }
 
 class AssetGenImage {

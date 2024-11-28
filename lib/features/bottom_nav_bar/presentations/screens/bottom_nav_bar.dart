@@ -22,6 +22,7 @@ class BottomNavBarScreen extends StatelessWidget {
       },
       child: BlocBuilder<BottomNavigationBloc, BottomNavigationState>(
         builder: (context, state) {
+          
           final navigationBloc = context.read<BottomNavigationBloc>();
           if (state is BottomNavigationUpdated) {
             return SizedBox(
@@ -38,6 +39,7 @@ class BottomNavBarScreen extends StatelessWidget {
                     left: 0,
                     child: Container(
                       decoration: BoxDecoration(
+                        color: context.colorScheme.background,
                         border: Border(
                           top: BorderSide(
                             color:
@@ -67,6 +69,7 @@ class BottomNavBarScreen extends StatelessWidget {
                                     : context.colorScheme.onBackground,
                               ),
                               onTap: () {
+                                
                                 navigationBloc.add(ChangeTabEvent(0));
                               },
                               title: 'Home',
