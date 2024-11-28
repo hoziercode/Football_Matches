@@ -5,13 +5,20 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:football_matches/core/config/app_colors.dart';
 import 'package:football_matches/core/utils/extensions/context_extension.dart';
+import 'package:football_matches/core/utils/reuseables/custome_textField.dart';
 import 'package:football_matches/features/matches/data/models/match.dart';
 import 'package:football_matches/features/matches/presentations/bloc/matches_bloc.dart';
 import 'package:football_matches/gen/assets.gen.dart';
 
-class MatchesScreen extends StatelessWidget {
+class MatchesScreen extends StatefulWidget {
   const MatchesScreen({super.key});
 
+  @override
+  State<MatchesScreen> createState() => _MatchesScreenState();
+}
+
+class _MatchesScreenState extends State<MatchesScreen> {
+  int pageIndex = 0;
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
@@ -43,13 +50,12 @@ class MatchesScreen extends StatelessWidget {
                     ),
                     centerTitle: true,
                     actions: [
-                      IconButton(
-                        onPressed: () {},
-                        icon: Icon(
-                          Icons.menu,
-                          color: AppColors.background,
-                        ),
+                      SizedBox(
+                        width: 134.w,
+                        height: 34.h,
+                        child: CustomeTextField(),
                       ),
+                      15.horizontalSpace,
                     ],
                     flexibleSpace: FlexibleSpaceBar(
                       background: SizedBox(
@@ -152,6 +158,11 @@ class MatchesScreen extends StatelessWidget {
                           ),
                         ),
                         child: TabBar(
+                          onTap: (e) {
+                            setState(() {
+                              pageIndex = e;
+                            });
+                          },
                           indicator: UnderlineTabIndicator(
                             borderRadius: BorderRadius.circular(4.r),
                             borderSide: BorderSide(
@@ -189,38 +200,55 @@ class MatchesScreen extends StatelessWidget {
                     ),
                   ),
                   // Tab content for each tab
-                  SliverFillRemaining(
-                    child: TabBarView(
-                      children: [
-                        Center(child: Text("New Matches")),
-                        Center(child: Text("Live Matches")),
-                        Padding(
-                          padding: EdgeInsets.symmetric(
-                            horizontal: 15.w,
-                          ),
-                          child: Column(
+                  SliverList(
+                    delegate: SliverChildBuilderDelegate(
+                      (context, index) {
+                        if (pageIndex == 0) {
+                          return Column(
                             children: [
-                              15.verticalSpace,
-                              ListView.builder(
-                                padding: EdgeInsets.zero,
-                                physics: NeverScrollableScrollPhysics(),
-                                itemCount: matchesBloc.pastMatches.length,
-                                shrinkWrap: true,
-                                itemBuilder: (context, index) {
-                                  final match = matchesBloc.pastMatches[index];
-                                  return _buildMatchCard(
-                                    match: match,
-                                    context: context,
-                                  );
-                                },
-                              ),
-                              90.verticalSpace,
+                              150.verticalSpace,
+                              Center(child: Text("New Matches")),
                             ],
-                          ),
-                        )
-                      ],
+                          );
+                        } else if (pageIndex == 1) {
+                          return Column(
+                            children: [
+                              150.verticalSpace,
+                              Center(child: Text("Live Matches")),
+                            ],
+                          );
+                        } else if (pageIndex == 2) {
+                          return Padding(
+                            padding: EdgeInsets.symmetric(
+                              horizontal: 15.w,
+                            ),
+                            child: Column(
+                              children: [
+                                15.verticalSpace,
+                                ListView.builder(
+                                  padding: EdgeInsets.zero,
+                                  physics: NeverScrollableScrollPhysics(),
+                                  itemCount: matchesBloc.pastMatches.length,
+                                  shrinkWrap: true,
+                                  itemBuilder: (context, index) {
+                                    final match =
+                                        matchesBloc.pastMatches[index];
+                                    return _buildMatchCard(
+                                      match: match,
+                                      context: context,
+                                    );
+                                  },
+                                ),
+                                90.verticalSpace,
+                              ],
+                            ),
+                          );
+                        }
+                        return SizedBox();
+                      },
+                      childCount: 1,
                     ),
-                  ),
+                  )
                 ],
               ),
             ),

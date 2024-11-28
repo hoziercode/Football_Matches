@@ -76,6 +76,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/shop.svg
   SvgGenImage get shop => const SvgGenImage('assets/icons/shop.svg');
 
+  /// File path: assets/icons/sub.svg
+  SvgGenImage get sub => const SvgGenImage('assets/icons/sub.svg');
+
   /// List of all assets
   List<SvgGenImage> get values => [
         alarmBell,
@@ -93,7 +96,8 @@ class $AssetsIconsGen {
         network,
         playSvgrepoCom,
         seriesa,
-        shop
+        shop,
+        sub
       ];
 }
 
@@ -151,6 +155,12 @@ class $AssetsImagesGen {
           const AssetGenImage(
               'assets/images/christian-pulisic-ac-milan-serie-a-usa-american-footballers-uniqrenders.com.png');
 
+  /// File path: assets/images/clock.png
+  AssetGenImage get clock => const AssetGenImage('assets/images/clock.png');
+
+  /// File path: assets/images/date.png
+  AssetGenImage get date => const AssetGenImage('assets/images/date.png');
+
   /// File path: assets/images/fc-bayern-munich-f-c-bavaria-tultitlan-logo-football-emblem-football-d0997aaa531ae7bb04d3c117830af8fb.png
   AssetGenImage
       get fcBayernMunichFCBavariaTultitlanLogoFootballEmblemFootballD0997aaa531ae7bb04d3c117830af8fb =>
@@ -166,6 +176,15 @@ class $AssetsImagesGen {
   /// File path: assets/images/first_background.png
   AssetGenImage get firstBackground =>
       const AssetGenImage('assets/images/first_background.png');
+
+  /// File path: assets/images/football-referee-with-hand-gestures_svgrepo.com.png
+  AssetGenImage get footballRefereeWithHandGesturesSvgrepoCom =>
+      const AssetGenImage(
+          'assets/images/football-referee-with-hand-gestures_svgrepo.com.png');
+
+  /// File path: assets/images/football-stadium-2_svgrepo.com.png
+  AssetGenImage get footballStadium2SvgrepoCom =>
+      const AssetGenImage('assets/images/football-stadium-2_svgrepo.com.png');
 
   /// File path: assets/images/football_svgrepo.com.png
   AssetGenImage get footballSvgrepoCom =>
@@ -200,6 +219,10 @@ class $AssetsImagesGen {
 
   /// File path: assets/images/league1.png
   AssetGenImage get league1 => const AssetGenImage('assets/images/league1.png');
+
+  /// File path: assets/images/locationpin.png
+  AssetGenImage get locationpin =>
+      const AssetGenImage('assets/images/locationpin.png');
 
   /// File path: assets/images/manU.png
   AssetGenImage get manU => const AssetGenImage('assets/images/manU.png');
@@ -239,6 +262,9 @@ class $AssetsImagesGen {
   AssetGenImage get stopwatchTimeTimerSvgrepoCom =>
       const AssetGenImage('assets/images/stopwatch-time-timer_svgrepo.com.png');
 
+  /// File path: assets/images/sub.png
+  AssetGenImage get sub => const AssetGenImage('assets/images/sub.png');
+
   /// File path: assets/images/toppng.com-raheem-sterling-377x540.png
   AssetGenImage get toppngComRaheemSterling377x540 => const AssetGenImage(
       'assets/images/toppng.com-raheem-sterling-377x540.png');
@@ -248,6 +274,10 @@ class $AssetsImagesGen {
       get viniciusJuniorRealMadridLaLigaBrazilBrazilianFootballersUniqrendersCom =>
           const AssetGenImage(
               'assets/images/vinicius-junior-real-madrid-la-liga-brazil-brazilian-footballers-uniqrenders.com.png');
+
+  /// File path: assets/images/yellowCard.png
+  AssetGenImage get yellowCard =>
+      const AssetGenImage('assets/images/yellowCard.png');
 
   /// List of all assets
   List<AssetGenImage> get values => [
@@ -263,10 +293,14 @@ class $AssetsImagesGen {
         bun,
         chelsea,
         christianPulisicAcMilanSerieAUsaAmericanFootballersUniqrendersCom,
+        clock,
+        date,
         fcBayernMunichFCBavariaTultitlanLogoFootballEmblemFootballD0997aaa531ae7bb04d3c117830af8fb,
         field1,
         field2,
         firstBackground,
+        footballRefereeWithHandGesturesSvgrepoCom,
+        footballStadium2SvgrepoCom,
         footballSvgrepoCom,
         gaviFcBarcelonaLaLigaSpainSpanishFootballersUniqrendersCom,
         goal,
@@ -275,6 +309,7 @@ class $AssetsImagesGen {
         kylianMbappeParisSaintGermainLigue1FranceFrenchFootballersUniqrendersCom,
         laligalogo,
         league1,
+        locationpin,
         manU,
         nikola,
         notgoal,
@@ -285,8 +320,10 @@ class $AssetsImagesGen {
         rodrygoRealMadridLaLigaBrazilBrazilianFootballersUniqrendersCom,
         serieA,
         stopwatchTimeTimerSvgrepoCom,
+        sub,
         toppngComRaheemSterling377x540,
-        viniciusJuniorRealMadridLaLigaBrazilBrazilianFootballersUniqrendersCom
+        viniciusJuniorRealMadridLaLigaBrazilBrazilianFootballersUniqrendersCom,
+        yellowCard
       ];
 }
 

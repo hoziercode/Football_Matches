@@ -1,10 +1,31 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:football_matches/core/utils/extensions/context_extension.dart';
 
 class Fantasy extends StatelessWidget {
   const Fantasy({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "Fantasy",
+          style: context.textTheme.bodyMedium!.copyWith(
+            color: context.colorScheme.onSurface,
+            fontSize: 24.sp,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+      ),
+      body: Center(
+        child: Text(
+          "Fantasy",
+          style: context.textTheme.bodyMedium!.copyWith(
+            color: context.colorScheme.onSurface,
+          ),
+        ),
+      ),
+    );
   }
 }

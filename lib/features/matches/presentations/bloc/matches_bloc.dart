@@ -73,4 +73,8 @@ class MatchesBloc extends Bloc<MatchesEvent, MatchesState> {
       throw Exception('Failed to parse matches JSON');
     }
   }
+
+  List<String> matchStandings = ["MP", "W", "D", "L", "GA", "GF", "Pt"];
+  List<String> matchStandingValues = ["8", "6", "9", "6", "5", "28", "30"];
+  List<String> matchStandingValues1 = ["8", "7", "5", "9", "9", "24", "30"];
 }

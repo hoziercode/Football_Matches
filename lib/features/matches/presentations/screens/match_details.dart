@@ -5,8 +5,10 @@ import 'package:football_matches/core/config/app_colors.dart';
 import 'package:football_matches/core/utils/extensions/context_extension.dart';
 import 'package:football_matches/features/matches/data/models/match.dart';
 import 'package:football_matches/features/matches/presentations/bloc/matches_bloc.dart';
+import 'package:football_matches/features/matches/presentations/widgets/live_match_standings.dart';
 import 'package:football_matches/features/matches/presentations/widgets/man_of_the_match.dart';
 import 'package:football_matches/features/matches/presentations/widgets/match_current_stat.dart';
+import 'package:football_matches/features/matches/presentations/widgets/match_infomation.dart';
 import 'package:football_matches/features/matches/presentations/widgets/penalty_shootout.dart';
 import 'package:football_matches/features/matches/presentations/widgets/team_overview.dart';
 import 'package:football_matches/features/matches/presentations/widgets/watch_hightlight.dart';
@@ -96,7 +98,7 @@ class _MatchDetailsState extends State<MatchDetails> {
                               ),
                             ),
                             Positioned(
-                              top: 120.h,
+                              bottom: 30.h,
                               left: 0,
                               right: 0,
                               child: Row(
@@ -270,16 +272,38 @@ class _MatchDetailsState extends State<MatchDetails> {
                                 ManOfTheMatch(match: match),
                                 PenaltyShootout(match: match),
                                 MatchCurrentStat(match: match),
+                                LiveMatchStandings(
+                                  bloc: matchesBloc,
+                                  match: match,
+                                ),
+                                MatchInfomation(
+                                  match: match,
+                                ),
                                 100.verticalSpace,
                               ],
                             ),
                           );
                         } else if (pageIndex == 1) {
-                          return Center(child: Text("Line-up"));
+                          return Column(
+                            children: [
+                              100.verticalSpace,
+                              Center(child: Text("Line-up")),
+                            ],
+                          );
                         } else if (pageIndex == 2) {
-                          return Center(child: Text("Statistics"));
+                          return Column(
+                            children: [
+                              100.verticalSpace,
+                              Center(child: Text("Statistics")),
+                            ],
+                          );
                         } else if (pageIndex == 3) {
-                          return Center(child: Text("Matches"));
+                          return Column(
+                            children: [
+                              100.verticalSpace,
+                              Center(child: Text("Matches")),
+                            ],
+                          );
                         }
                         return SizedBox();
                       },

@@ -31,6 +31,7 @@ class BottomNavBarScreen extends StatelessWidget {
               child: Stack(
                 children: [
                   Scaffold(
+                    extendBody: false,
                     body: state.currentScreen,
                   ),
                   Positioned(

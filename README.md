@@ -6,18 +6,18 @@ The Real-Time Football Match Details App is designed to provide users with live 
 Live Match Scores: Get real-time updates on match scores.
 Match Stats: View detailed match statistics such as possession, shots, corners, and more.
 Player Performance: Detailed performance metrics for each player, including goals, assists, and other key stats.
-Team Insights: Check line-ups, formations, and other essential team data.
+- Team Insights: Check line-ups, formations, and other essential team data.
 Key Events Notifications: Receive push notifications for goals, red cards, and important match events.
-Match Timeline: Track live updates on the match timeline (e.g., goals, substitutions, fouls).
+- Match Timeline: Track live updates on the match timeline (e.g., goals, substitutions, fouls).
 ## Tech Stack
-Flutter: Cross-platform framework for building high-performance mobile apps.
-BLoC: State management solution for scalable, maintainable applications.
-GoRouter: Declarative routing solution for Flutter.
-Flutter ScreenUtil: For responsive UI design to accommodate multiple screen sizes.
-Firebase: For real-time data sync and push notifications.
-Equatable: For value-based comparison of objects in BLoC.
-Google Fonts: To enhance the typography with stylish font choices.
-Hydrated BLoC: For persisting BLoC states across app restarts.
+- Flutter: Cross-platform framework for building high-performance mobile apps.
+- BLoC: State management solution for scalable, maintainable applications.
+- GoRouter: Declarative routing solution for Flutter.
+- Flutter ScreenUtil: For responsive UI design to accommodate multiple screen sizes.
+- Firebase: For real-time data sync and push notifications.
+- Equatable: For value-based comparison of objects in BLoC.
+- Google Fonts: To enhance the typography with stylish font choices.
+- Hydrated BLoC: For persisting BLoC states across app restarts.
 
 ## Folder Structure
 
@@ -54,18 +54,18 @@ lib/
 - **config**: Contains global configuration files for app themes, text styles, and colors.
 - **utils**: Includes utility files such as screen utilities and context extensions.
 ## Features
-- **match**: Contains the features related to football matches, including:
+- **matches**: Contains the features related to football matches, including:
 - **data**: Handles data fetching, models, and repositories.
 **presentation**: Includes BLoC, screens, and UI components.
 domain: Contains business logic, use cases, and entities.
-Navigation
-app_router.dart: Manages routing across the app, using the GoRouter package for declarative navigation.
+## Navigation
+**app_router.dart**: Manages routing across the app, using the GoRouter package for declarative navigation.
 # App Architecture
 This app follows clean architecture principles to ensure a maintainable and scalable codebase:
 
-Data Layer: Responsible for fetching match data and player stats (models, repositories).
+- Data Layer: Responsible for fetching match data and player stats (models, repositories).
 Domain Layer: Contains the business logic, including use cases and entities that interact with data.
-Presentation Layer: Handles UI elements, user interactions, and state management (using BLoC).
+- Presentation Layer: Handles UI elements, user interactions, and state management (using BLoC).
 Core Layer: Shared components such as theme settings, utilities, and extensions.
 
 # Getting Started

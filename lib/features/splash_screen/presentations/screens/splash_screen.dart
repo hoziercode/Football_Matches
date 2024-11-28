@@ -1,9 +1,9 @@
-import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:football_matches/core/utils/extensions/context_extension.dart';
 import 'package:football_matches/features/splash_screen/presentations/bloc/splash_screen_bloc.dart';
-import 'package:lottie/lottie.dart';
+import 'package:football_matches/gen/assets.gen.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -19,33 +19,10 @@ class SplashScreen extends StatelessWidget {
       child: BlocBuilder<SplashScreenBloc, SplashScreenState>(
           builder: (context, state) {
         return Scaffold(
-          body: SizedBox(
-            width: context.screenWidth,
-            height: context.screenHeight,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Lottie.asset(
-                  "assets/animations/bouncingball.json",
-                ),
-                AnimatedTextKit(
-                  animatedTexts: [
-                    TypewriterAnimatedText(
-                      "Football Matches",
-                      textStyle: context.textTheme.bodyLarge!.copyWith(
-                        color: context.colorScheme.primary,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      speed: const Duration(milliseconds: 100),
-                    ),
-                  ],
-                  totalRepeatCount: 1,
-                  pause: const Duration(milliseconds: 500),
-                  displayFullTextOnTap: true,
-                  stopPauseOnTap: true,
-                ),
-              ],
+          backgroundColor: context.colorScheme.primary,
+          body: Center(
+            child: Assets.images.a3ScorersR3021.image(
+              width: 100.w,
             ),
           ),
         );

@@ -64,66 +64,9 @@
         "club": "Barcelona",
         "clubLogo": "assets/images/barca.png"
       },
-      "score": "3 - 3 (4 - 3 pens)",
+      "score": "3 - 3 (3 - 1 pens)",
       "hightlightThumbnail": "assets/images/field2.jpeg",
       "events": [
-        {
-          "minute": 8,
-          "type": "goal",
-          "player": "R. Lewandowski",
-          "playerImage": "assets/images/robert-lewandowski-fc-barcelona-la-liga-poland-polish-footballers-uniqrenders.com.png",
-          "team": "home",
-          "assist": "Pedri"
-        },
-        {
-          "minute": 22,
-          "type": "penalty",
-          "player": "Karim Benzema",
-          "playerImage": "assets/images/Karim-Benzema-from-Real-Madrid-transparent-PNG-image.png",
-          "team": "away",
-          "outcome": "scored"
-        },
-        {
-          "minute": 45,
-          "type": "yellow_card",
-          "player": "J. Cancelo",
-          "playerImage": "assets/images/joao-cancelo-manchester-city-premier-league-portugal-portuguese-footballers-uniqrenders.com.png",
-          "team": "home"
-        },
-        {
-          "minute": 67,
-          "type": "goal",
-          "player": "Vinicius Jr.",
-          "playerImage": "assets/images/vinicius-junior-real-madrid-la-liga-brazil-brazilian-footballers-uniqrenders.com.png",
-          "team": "away",
-          "assist": "L. Modric"
-        },
-        {
-          "minute": 89,
-          "type": "goal",
-          "player": "A. Fati",
-          "playerImage": "assets/images/ansu-fati-fc-barcelona-la-liga-spain-spanish-footballers-uniqrenders.com.png",
-          "team": "home",
-          "assist": "J. Cancelo"
-        },
-        { "minute": 90, "type": "end_of_90_minutes" },
-        {
-          "minute": 102,
-          "type": "goal",
-          "player": "Rodrygo",
-          "playerImage": "assets/images/rodrygo-real-madrid-la-liga-brazil-brazilian-footballers-uniqrenders.com.png",
-          "team": "away",
-          "assist": "Camavinga"
-        },
-        {
-          "minute": 117,
-          "type": "goal",
-          "player": "Gavi",
-          "playerImage": "assets/images/gavi-fc-barcelona-la-liga-spain-spanish-footballers-uniqrenders.com.png",
-          "team": "home",
-          "assist": "De Jong"
-        },
-        { "minute": 120, "type": "end_of_extra_time" },
         {
           "minute": "penalties",
           "type": "penalty_shootout",
@@ -134,6 +77,7 @@
               "outcome": "scored",
               "playerImage": "assets/images/robert-lewandowski-fc-barcelona-la-liga-poland-polish-footballers-uniqrenders.com.png"
             },
+
             {
               "player": "Vinicius Jr.",
               "team": "away",
@@ -157,8 +101,72 @@
               "team": "home",
               "outcome": "scored",
               "playerImage": "assets/images/gavi-fc-barcelona-la-liga-spain-spanish-footballers-uniqrenders.com.png"
+            },
+            {
+              "player": "Karim Benzema",
+              "team": "away",
+              "outcome": "missed",
+              "playerImage": "assets/images/Karim-Benzema-from-Real-Madrid-transparent-PNG-image.png"
             }
           ]
+        },
+        { "minute": 120, "type": "end_of_extra_time" },
+        {
+          "minute": 117,
+          "type": "goal",
+          "player": "R. Lewandowski",
+          "playerImage": "assets/images/robert-lewandowski-fc-barcelona-la-liga-poland-polish-footballers-uniqrenders.com.png",
+          "team": "home",
+          "assist": "Pedri"
+        },
+        {
+          "minute": 102,
+          "type": "penalty",
+          "player": "Karim Benzema",
+          "playerImage": "assets/images/Karim-Benzema-from-Real-Madrid-transparent-PNG-image.png",
+          "team": "away",
+          "outcome": "scored"
+        },
+        { "minute": 90, "type": "end_of_90_minutes" },
+        {
+          "minute": 89,
+          "type": "yellow_card",
+          "player": "J. Cancelo",
+          "playerImage": "assets/images/joao-cancelo-manchester-city-premier-league-portugal-portuguese-footballers-uniqrenders.com.png",
+          "team": "home"
+        },
+        {
+          "minute": 67,
+          "type": "goal",
+          "player": "Vinicius Jr.",
+          "playerImage": "assets/images/vinicius-junior-real-madrid-la-liga-brazil-brazilian-footballers-uniqrenders.com.png",
+          "team": "away",
+          "assist": "L. Modric"
+        },
+        { "minute": 40, "type": "half_time" },
+        {
+          "minute": 45,
+          "type": "goal",
+          "player": "A. Fati",
+          "playerImage": "assets/images/ansu-fati-fc-barcelona-la-liga-spain-spanish-footballers-uniqrenders.com.png",
+          "team": "home",
+          "assist": "J. Cancelo"
+        },
+        {
+          "minute": 22,
+          "type": "goal",
+          "player": "Rodrygo",
+          "playerImage": "assets/images/rodrygo-real-madrid-la-liga-brazil-brazilian-footballers-uniqrenders.com.png",
+          "team": "away",
+          "assist": "Camavinga"
+        },
+        {
+          "minute": 8,
+          "type": "goal",
+          "player": "Gavi",
+          "playerImage": "assets/images/gavi-fc-barcelona-la-liga-spain-spanish-footballers-uniqrenders.com.png",
+          "team": "home",
+          "assist": "De Jong"
         }
       ]
     },
@@ -229,8 +237,9 @@
         "clubLogo": "assets/images/manU.png"
       },
       "events": [
+        { "minute": 90, "type": "end_of_90_minutes" },
         {
-          "minute": 15,
+          "minute": 78,
           "type": "goal",
           "player": "M. Rashford",
           "team": "home",
@@ -238,13 +247,14 @@
           "playerImage": "assets/images/0s6vq2b84g5epvo28evcqqg6co-7c632b414cd2d94e555d8a47e3bc7a27.png"
         },
         {
-          "minute": 28,
+          "minute": 55,
           "type": "goal",
           "player": "Sterling",
           "team": "away",
           "assist": "Enzo Fernandez",
           "playerImage": "assets/images/toppng.com-raheem-sterling-377x540.png"
         },
+        { "minute": 90, "type": "half_time" },
         {
           "minute": 42,
           "type": "yellow_card",
@@ -253,21 +263,20 @@
           "playerImage": "assets/images/christian-pulisic-ac-milan-serie-a-usa-american-footballers-uniqrenders.com.png"
         },
         {
-          "minute": 55,
+          "minute": 28,
           "type": "substitution",
           "playerIn": "M. Mount",
           "playerOut": "Casemiro",
           "team": "home"
         },
         {
-          "minute": 78,
+          "minute": 15,
           "type": "goal",
           "player": "B. Fernandes",
           "team": "home",
           "assist": "L. Shaw",
           "playerImage": "assets/images/bruno-fernandes-manchester-united-premier-league-portugal-portuguese-footballers-uniqrenders.com.png"
-        },
-        { "minute": 90, "type": "end_of_90_minutes" }
+        }
       ]
     }
   ]
