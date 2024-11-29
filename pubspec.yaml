@@ -28,6 +28,7 @@ dependencies:
   fl_chart: ^0.69.2
   flutter_dash: ^1.0.0
   mobkit_dashed_border: ^0.0.7
+  video_player: ^2.9.2
 
 dev_dependencies:
   flutter_test:
@@ -48,6 +49,7 @@ flutter:
     - assets/icons/
     - assets/animations/
     - assets/json/
+    - assets/videos/
 
 flutter_gen:
   integrations:

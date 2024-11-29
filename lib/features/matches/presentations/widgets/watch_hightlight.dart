@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:football_matches/core/config/app_colors.dart';
 import 'package:football_matches/core/utils/extensions/context_extension.dart';
 import 'package:football_matches/features/matches/data/models/match.dart';
+import 'package:football_matches/features/matches/presentations/screens/video_viewer.dart';
 
 class WatchHightlight extends StatelessWidget {
   const WatchHightlight({
@@ -63,13 +64,26 @@ class WatchHightlight extends StatelessWidget {
                     ],
                   ),
                 ),
-                CircleAvatar(
-                  radius: 30.r,
-                  backgroundColor: AppColors.whiteColor.withOpacity(0.7),
-                  child: Icon(
-                    Icons.play_arrow,
-                    size: 50,
-                    color: context.colorScheme.primary,
+                GestureDetector(
+                  behavior: HitTestBehavior.opaque,
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => VideoViewer(
+                          url: "assets/videos/h.mp4"
+                        ),
+                      ),
+                    );
+                  },
+                  child: CircleAvatar(
+                    radius: 30.r,
+                    backgroundColor: AppColors.whiteColor.withOpacity(0.7),
+                    child: Icon(
+                      Icons.play_arrow,
+                      size: 50,
+                      color: context.colorScheme.primary,
+                    ),
                   ),
                 ),
                 SizedBox(

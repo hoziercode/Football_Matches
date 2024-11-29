@@ -337,6 +337,16 @@ class $AssetsJsonGen {
   List<String> get values => [matches];
 }
 
+class $AssetsVideosGen {
+  const $AssetsVideosGen();
+
+  /// File path: assets/videos/h.mp4
+  String get h => 'assets/videos/h.mp4';
+
+  /// List of all assets
+  List<String> get values => [h];
+}
+
 class Assets {
   Assets._();
 
@@ -344,6 +354,7 @@ class Assets {
   static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
   static const $AssetsJsonGen json = $AssetsJsonGen();
+  static const $AssetsVideosGen videos = $AssetsVideosGen();
 }
 
 class AssetGenImage {

@@ -176,7 +176,7 @@ class TeamStandings extends StatelessWidget {
               ),
               15.horizontalSpace,
               SizedBox(
-                width: 100.w,
+                width: 90.w,
                 child: Text(
                   name,
                   overflow: TextOverflow.ellipsis,

@@ -303,7 +303,7 @@ class PenaltyEvent extends StatelessWidget {
                               ),
                         10.horizontalSpace,
                         CircleAvatar(
-                          radius: 10.r,
+                          radius: 11.r,
                           backgroundColor: context.colorScheme.primary,
                           child: Text(
                             "${event.minute}",
